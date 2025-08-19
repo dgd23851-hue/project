@@ -1,0 +1,132 @@
+.admin-banner {
+  position: relative;
+}
+.admin-label {
+  position: absolute;
+  left: 50%;
+  top: 15px;
+  transform: translateX(-50%);
+  background: #2b3647d7;
+  color: #fff;
+  padding: 7px 22px;
+  font-size: 1.2rem;
+  border-radius: 11px;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+  box-shadow: 0 2px 14px rgba(20,40,80,0.08);
+}
+.main-admin-flex {
+  display: flex;
+  justify-content: center;   /* <= space-between에서 center로! */
+  align-items: flex-start;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 40px;
+  gap: 56px;
+}
+
+/* 로그인 카드 */
+.admin-login-card {
+  width: 330px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(80,120,180,0.08);
+  padding: 42px 36px 32px 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  margin-left: 48px;
+}
+.login-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #17335c;
+  letter-spacing: 0.05em;
+}
+.login-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1.5px solid #d7e5fa;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  margin-bottom: 14px;
+  background: #f8fbff;
+  transition: border 0.2s;
+}
+.login-input:focus {
+  outline: none;
+  border: 1.5px solid #3388f7;
+  background: #f1f6fc;
+}
+.login-btn {
+  width: 100%;
+  padding: 11px 0;
+  border: none;
+  border-radius: 8px;
+  background: #2979f7;
+  color: #fff;
+  font-size: 1.12rem;
+  font-weight: 600;
+  margin-top: 7px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.login-btn:hover {
+  background: #1558c9;
+}
+.login-hint {
+  font-size: 0.96rem;
+  color: #b0bacd;
+  margin-top: 10px;
+}
+/* 관리자 버튼, 추가카드 스타일은 그대로 */
+.admin-btn-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+.admin-btn {
+  background: #2861d6;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 6px 17px;
+  font-size: 0.98rem;
+  cursor: pointer;
+  transition: background 0.14s;
+}
+.admin-btn:hover {
+  background: #1836aa;
+}
+.add-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #2a416b;
+  background: #f5f8fc;
+  border: 2px dashed #9ecaf7;
+  cursor: pointer;
+  min-height: 140px;
+}
+.add-news-plus {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+  color: #2979f7;
+}
+/* 반응형: 모바일에선 세로로 */
+@media (max-width: 1000px) {
+  .main-admin-flex {
+    flex-direction: column;
+    gap: 32px;
+    align-items: stretch;
+  }
+  .admin-login-card {
+    width: 96vw;
+    max-width: 380px;
+    margin: 0 auto;
+  }
+}
